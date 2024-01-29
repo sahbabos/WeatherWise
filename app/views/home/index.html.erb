@@ -1,0 +1,5 @@
+<% form_for @entry do |f| %>
+    <%= f.text_field :name %>
+    <%= f.select :temperature, [['Hot','hot'],['Medium','medium'],['Cold','cold']] %>
+    <%= f.submit %>
+  <% end %>
