@@ -1,13 +1,20 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <style>
-      /* Email styles need to be inline */
-    </style>
-  </head>
+<% if @eight_day_forecast %>
+  <% if @from_cache %>
+    <p>Data loaded from cache.</p>
+  <% else %>
+    <p>Data retrieved from OpenWeatherMap.</p>
+  <% end %>
 
-  <body>
-    <%= yield %>
-  </body>
-</html>
+  <h2>8-Day Weather Forecast</h2>
+
+  <% @eight_day_forecast.each do |day| %>
+    <div class="forecast-day">
+      <h3><%= day[:dt] %> <!-- Format date as needed --></h3>
+      <p>Temperature: <%= day[:temp][:day] %>°C</p>
+      <p>Weather: <%= day[:weather].first[:main] %></p>
+      <!-- Add more details as required -->
+    </div>
+  <% end %>
+<% else %>
+  <p>Forecast data is not available.</p>
+<% end %>

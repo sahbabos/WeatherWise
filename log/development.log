@@ -397,3 +397,1345 @@ ActionView::Template::Error (First argument in form cannot contain nil or be emp
     4:     <%= f.submit %>
   
 app/views/home/index.html.erb:1
+Started GET "/" for ::1 at 2024-01-28 23:26:14 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sahba/.rvm/gems/ruby-3.1.0/gems/railties-7.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sahba/.rvm/gems/ruby-3.1.0/gems/railties-7.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.6ms | Allocations: 387)
+Completed 200 OK in 15ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 4572)
+
+
+Started GET "/" for ::1 at 2024-01-28 23:26:20 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sahba/.rvm/gems/ruby-3.1.0/gems/railties-7.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sahba/.rvm/gems/ruby-3.1.0/gems/railties-7.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.0ms | Allocations: 24)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started GET "/" for ::1 at 2024-01-28 23:26:38 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sahba/.rvm/gems/ruby-3.1.0/gems/railties-7.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sahba/.rvm/gems/ruby-3.1.0/gems/railties-7.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 221)
+
+
+Started GET "/" for ::1 at 2024-01-28 23:28:14 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sahba/.rvm/gems/ruby-3.1.0/gems/railties-7.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sahba/.rvm/gems/ruby-3.1.0/gems/railties-7.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | Allocations: 286)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 1077)
+
+
+Started GET "/" for ::1 at 2024-01-28 23:29:31 -0800
+  
+ActionController::RoutingError (uninitialized constant HomeController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for ::1 at 2024-01-28 23:30:58 -0800
+  
+ActionController::RoutingError (uninitialized constant WheatherController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  WeatherController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for ::1 at 2024-01-28 23:30:58 -0800
+  
+ActionController::RoutingError (uninitialized constant WheatherController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  WeatherController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for ::1 at 2024-01-28 23:30:58 -0800
+  
+ActionController::RoutingError (uninitialized constant WheatherController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  WeatherController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/" for ::1 at 2024-01-28 23:32:21 -0800
+  
+ArgumentError ('WeatherController' is not a supported controller name. This can lead to potential routing problems. See https://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:4:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/weather/91356" for ::1 at 2024-01-28 23:35:18 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+Completed 406 Not Acceptable in 833ms (ActiveRecord: 0.0ms | Allocations: 4025)
+
+
+  
+ActionController::MissingExactTemplate (WeatherController#show is missing a template for request formats: text/html):
+  
+actionpack (7.1.3) lib/action_controller/metal/implicit_render.rb:47:in `default_render'
+actionpack (7.1.3) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.3) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.3) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.3) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+actiontext (7.1.3) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.3) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.3) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.3) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.3) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.3) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.3) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.3) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.3) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.3) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.3) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.3) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack (3.0.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.8) lib/rack/etag.rb:29:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/weather/91356" for ::1 at 2024-01-28 23:49:14 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+Completed 406 Not Acceptable in 705ms (ActiveRecord: 0.0ms | Allocations: 2528)
+
+
+  
+ActionController::MissingExactTemplate (WeatherController#show is missing a template for request formats: text/html):
+  
+actionpack (7.1.3) lib/action_controller/metal/implicit_render.rb:47:in `default_render'
+actionpack (7.1.3) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.3) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.3) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.3) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+actiontext (7.1.3) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.3) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.3) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.3) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.3) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.3) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.3) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.3) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.3) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.3) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.3) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.3) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack (3.0.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.8) lib/rack/etag.rb:29:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/weather/91356" for ::1 at 2024-01-28 23:49:16 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+Completed 406 Not Acceptable in 902ms (ActiveRecord: 0.0ms | Allocations: 2020)
+
+
+  
+ActionController::MissingExactTemplate (WeatherController#show is missing a template for request formats: text/html):
+  
+actionpack (7.1.3) lib/action_controller/metal/implicit_render.rb:47:in `default_render'
+actionpack (7.1.3) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.3) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.3) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.3) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+actiontext (7.1.3) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.3) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.3) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.3) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.3) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.3) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.3) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.3) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.3) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.3) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.3) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.3) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack (3.0.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.8) lib/rack/etag.rb:29:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/weather/91356" for ::1 at 2024-01-28 23:49:51 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+Completed 406 Not Acceptable in 837ms (ActiveRecord: 0.0ms | Allocations: 4114)
+
+
+  
+ActionController::MissingExactTemplate (WeatherController#show is missing a template for request formats: text/html):
+  
+actionpack (7.1.3) lib/action_controller/metal/implicit_render.rb:47:in `default_render'
+actionpack (7.1.3) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.3) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.3) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.3) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+actiontext (7.1.3) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.3) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.3) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.3) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.3) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.3) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.3) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.3) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.3) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.3) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.3) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.3) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack (3.0.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.8) lib/rack/etag.rb:29:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/" for ::1 at 2024-01-28 23:54:23 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sahba/.rvm/gems/ruby-3.1.0/gems/railties-7.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sahba/.rvm/gems/ruby-3.1.0/gems/railties-7.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | Allocations: 295)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1354)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-28 23:54:39 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+Completed 406 Not Acceptable in 627ms (ActiveRecord: 0.0ms | Allocations: 4124)
+
+
+  
+ActionController::MissingExactTemplate (WeatherController#show is missing a template for request formats: text/html):
+  
+actionpack (7.1.3) lib/action_controller/metal/implicit_render.rb:47:in `default_render'
+actionpack (7.1.3) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.3) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.3) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.3) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+actiontext (7.1.3) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.3) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.3) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.3) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.3) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.3) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.3) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.3) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.3) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.3) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.3) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.3) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack (3.0.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.8) lib/rack/etag.rb:29:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/weather/91356" for ::1 at 2024-01-28 23:54:41 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+Completed 406 Not Acceptable in 759ms (ActiveRecord: 0.0ms | Allocations: 2161)
+
+
+  
+ActionController::MissingExactTemplate (WeatherController#show is missing a template for request formats: text/html):
+  
+actionpack (7.1.3) lib/action_controller/metal/implicit_render.rb:47:in `default_render'
+actionpack (7.1.3) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+actionpack (7.1.3) lib/abstract_controller/base.rb:224:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.1.3) lib/abstract_controller/callbacks.rb:259:in `block in process_action'
+activesupport (7.1.3) lib/active_support/callbacks.rb:121:in `block in run_callbacks'
+actiontext (7.1.3) lib/action_text/rendering.rb:23:in `with_renderer'
+actiontext (7.1.3) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.1.3) lib/active_support/callbacks.rb:130:in `instance_exec'
+activesupport (7.1.3) lib/active_support/callbacks.rb:130:in `block in run_callbacks'
+activesupport (7.1.3) lib/active_support/callbacks.rb:141:in `run_callbacks'
+actionpack (7.1.3) lib/abstract_controller/callbacks.rb:258:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/rescue.rb:25:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/instrumentation.rb:74:in `block in process_action'
+activesupport (7.1.3) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.1.3) lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+activesupport (7.1.3) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.1.3) lib/action_controller/metal/instrumentation.rb:73:in `process_action'
+actionpack (7.1.3) lib/action_controller/metal/params_wrapper.rb:261:in `process_action'
+activerecord (7.1.3) lib/active_record/railties/controller_runtime.rb:32:in `process_action'
+actionpack (7.1.3) lib/abstract_controller/base.rb:160:in `process'
+actionview (7.1.3) lib/action_view/rendering.rb:40:in `process'
+actionpack (7.1.3) lib/action_controller/metal.rb:227:in `dispatch'
+actionpack (7.1.3) lib/action_controller/metal.rb:309:in `dispatch'
+actionpack (7.1.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.1.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:51:in `block in serve'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.3) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack (3.0.8) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.0.8) lib/rack/etag.rb:29:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:31:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.3) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.3) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.3) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.3) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.3) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.3) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.3) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.3) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.3) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.3) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.3) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.3) lib/rails/engine.rb:536:in `call'
+puma (6.4.2) lib/puma/configuration.rb:272:in `call'
+puma (6.4.2) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.2) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.2) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.2) lib/puma/server.rb:464:in `process_client'
+puma (6.4.2) lib/puma/server.rb:245:in `block in run'
+puma (6.4.2) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started GET "/weather/91356" for ::1 at 2024-01-28 23:56:29 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 98.1ms | Allocations: 41893)
+Completed 200 OK in 708ms (Views: 101.1ms | ActiveRecord: 0.0ms | Allocations: 44754)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-28 23:56:34 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 10)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 1413)
+Completed 200 OK in 829ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 3270)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-28 23:57:19 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 299)
+  Rendered layout layouts/application.html.erb (Duration: 155.5ms | Allocations: 36330)
+Completed 200 OK in 954ms (Views: 163.6ms | ActiveRecord: 0.0ms | Allocations: 42717)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-28 23:58:12 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1561)
+Completed 200 OK in 623ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 3480)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 00:00:20 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 258)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 16357)
+Completed 200 OK in 2081ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 19108)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 00:02:08 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 6.0ms | Allocations: 3341)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3438)
+Completed 500 Internal Server Error in 649ms (ActiveRecord: 0.0ms | Allocations: 6159)
+
+
+  
+ActionView::Template::Error (undefined method `capitalize' for {"id"=>800, "main"=>"Clear", "description"=>"clear sky", "icon"=>"01n"}:Hash
+
+ @output_buffer.safe_append='        <p>'.freeze; @output_buffer.append=( sub_key.capitalize ); @output_buffer.safe_append=': '.freeze; @output_buffer.append=( sub_value ); @output_buffer.safe_append='</p>
+                                                                                 ^^^^^^^^^^^):
+    12:     <% if value.is_a?(Hash) || value.is_a?(Array) %>
+    13:       <h2><%= key.capitalize %></h2>
+    14:       <% value.each do |sub_key, sub_value| %>
+    15:         <p><%= sub_key.capitalize %>: <%= sub_value %></p>
+    16:       <% end %>
+    17:     <% else %>
+    18:       <p><%= key.capitalize %>: <%= value %></p>
+  
+app/views/weather/show.html.erb:15
+app/views/weather/show.html.erb:14:in `each'
+app/views/weather/show.html.erb:14
+app/views/weather/show.html.erb:11:in `each'
+app/views/weather/show.html.erb:11
+Started GET "/weather/91356" for ::1 at 2024-01-29 00:02:48 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2941)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3030)
+Completed 500 Internal Server Error in 846ms (ActiveRecord: 0.0ms | Allocations: 5744)
+
+
+  
+ActionView::Template::Error (undefined method `capitalize' for {"id"=>800, "main"=>"Clear", "description"=>"clear sky", "icon"=>"01n"}:Hash
+
+ @output_buffer.safe_append='        <p>'.freeze; @output_buffer.append=( sub_key.capitalize ); @output_buffer.safe_append=': '.freeze; @output_buffer.append=( sub_value ); @output_buffer.safe_append='</p>
+                                                                                 ^^^^^^^^^^^):
+    12:     <% if value.is_a?(Hash) || value.is_a?(Array) %>
+    13:       <h2><%= key.capitalize %></h2>
+    14:       <% value.each do |sub_key, sub_value| %>
+    15:         <p><%= sub_key.capitalize %>: <%= sub_value %></p>
+    16:       <% end %>
+    17:     <% else %>
+    18:       <p><%= key.capitalize %>: <%= value %></p>
+  
+app/views/weather/show.html.erb:15
+app/views/weather/show.html.erb:14:in `each'
+app/views/weather/show.html.erb:14
+app/views/weather/show.html.erb:11:in `each'
+app/views/weather/show.html.erb:11
+Started GET "/weather/91356" for ::1 at 2024-01-29 00:04:21 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 650)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 16831)
+Completed 200 OK in 658ms (Views: 25.3ms | ActiveRecord: 0.0ms | Allocations: 19570)
+
+
+Started GET "/" for ::1 at 2024-01-29 00:37:44 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sahba/.rvm/gems/ruby-3.1.0/gems/railties-7.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sahba/.rvm/gems/ruby-3.1.0/gems/railties-7.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 292)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1168)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 12:49:18 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 645)
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 16741)
+Completed 200 OK in 1127ms (Views: 39.3ms | ActiveRecord: 0.0ms | Allocations: 19755)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 12:49:22 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 86)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1421)
+Completed 200 OK in 791ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 3274)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 12:55:03 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1354)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1443)
+Completed 500 Internal Server Error in 1259ms (ActiveRecord: 0.0ms | Allocations: 4435)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+     8: 
+     9:   <h1>Current Weather</h1>
+    10: 
+    11:   <p>Time: <%= @weather_data.formatted_time %></p>
+    12:   <p>Sunrise: <%= @weather_data.sunrise %></p>
+    13:   <p>Sunset: <%= @weather_data.sunset %></p>
+    14:   <p>Temperature: <%= @weather_data.temperature %>°C</p>
+  
+app/models/weather_data.rb:63:in `to_s'
+app/models/weather_data.rb:63:in `format_unix_time'
+app/models/weather_data.rb:7:in `formatted_time'
+app/views/weather/show.html.erb:11
+Started GET "/weather/91356" for ::1 at 2024-01-29 12:58:14 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1335)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1424)
+Completed 500 Internal Server Error in 1014ms (ActiveRecord: 0.0ms | Allocations: 4445)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+     8: 
+     9:   <h1>Current Weather</h1>
+    10: 
+    11:   <p>Time: <%= @weather_data.formatted_time %></p>
+    12:   <p>Sunrise: <%= @weather_data.sunrise %></p>
+    13:   <p>Sunset: <%= @weather_data.sunset %></p>
+    14:   <p>Temperature: <%= @weather_data.temperature %>°C</p>
+  
+app/models/weather_data.rb:63:in `to_s'
+app/models/weather_data.rb:63:in `format_unix_time'
+app/models/weather_data.rb:7:in `formatted_time'
+app/views/weather/show.html.erb:11
+Started GET "/weather/91356" for ::1 at 2024-01-29 12:59:06 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 472)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 16636)
+Completed 200 OK in 1564ms (Views: 21.0ms | ActiveRecord: 0.0ms | Allocations: 19683)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 13:02:30 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 475)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 16642)
+Completed 200 OK in 847ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 19546)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 13:02:49 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 45)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1398)
+Completed 200 OK in 884ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 3251)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 13:04:55 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 45)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1392)
+Completed 200 OK in 1036ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 3118)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 13:05:58 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 45)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1401)
+Completed 200 OK in 821ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 3124)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 13:16:47 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1383)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1480)
+Completed 500 Internal Server Error in 863ms (ActiveRecord: 0.0ms | Allocations: 4373)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- app/views/weather/show.html.erb -->
+<% if @weather_data %>
+  <% if @from_cache %>
+    <p>Data loaded from cache.</p>
+  <% else %>
+    <p>Data retrieved from OpenWeatherMap API.</p>
+  <% end %>
+
+  <h1>Current Weather</h1>
+
+  <p>Date: <%= Date.today.strftime("%A, %B %d") @weather_data.formatted_time %></p>
+  <p>Sunrise: <%= @weather_data.sunrise %></p>
+  <p>Sunset: <%= @weather_data.sunset %></p>
+  <p>Temperature: <%= @weather_data.temperature %>°C</p>
+  <p>Feels Like: <%= @weather_data.feels_like %>°C</p>
+  <p>Pressure: <%= @weather_data.pressure %></p>
+  <p>Humidity: <%= @weather_data.humidity %></p>
+  <p>UV Index: <%= @weather_data.uvi %></p>
+  <p>Cloudiness: <%= @weather_data.clouds %></p>
+  <p>Visibility: <%= @weather_data.visibility %></p>
+  <p>Weather Conditions: <%= @weather_data.main %>, <%= @weather_data.description %></p>
+  <% if @weather_data.icon.present? %>
+    <img src="http://openweathermap.org/img/wn/<%= @weather_data.icon %>@2x.png" alt="Weather icon">
+  <% end %>
+<% else %>
+  <p>Current weather data is not available.</p>
+<% end %>
+
+):
+1:    <!-- app/views/weather/show.html.erb -->
+2:    <% if @weather_data %>
+3:      <% if @from_cache %>
+4:        <p>Data loaded from cache.</p>
+5:      <% else %>
+6:        <p>Data retrieved from OpenWeatherMap API.</p>
+7:      <% end %>
+8:    
+9:      <h1>Current Weather</h1>
+10:    
+11:      <p>Date: <%= Date.today.strftime("%A, %B %d") @weather_data.formatted_time %></p>
+12:      <p>Sunrise: <%= @weather_data.sunrise %></p>
+13:      <p>Sunset: <%= @weather_data.sunset %></p>
+14:      <p>Temperature: <%= @weather_data.temperature %>°C</p>
+15:      <p>Feels Like: <%= @weather_data.feels_like %>°C</p>
+16:      <p>Pressure: <%= @weather_data.pressure %></p>
+17:      <p>Humidity: <%= @weather_data.humidity %></p>
+18:      <p>UV Index: <%= @weather_data.uvi %></p>
+19:      <p>Cloudiness: <%= @weather_data.clouds %></p>
+20:      <p>Visibility: <%= @weather_data.visibility %></p>
+21:      <p>Weather Conditions: <%= @weather_data.main %>, <%= @weather_data.description %></p>
+22:      <% if @weather_data.icon.present? %>
+23:        <img src="http://openweathermap.org/img/wn/<%= @weather_data.icon %>@2x.png" alt="Weather icon">
+24:      <% end %>
+25:    <% else %>
+26:      <p>Current weather data is not available.</p>
+27:    <% end %>
+  
+app/views/weather/show.html.erb:11: syntax error, unexpected instance variable, expecting ')'
+Started GET "/weather/91356" for ::1 at 2024-01-29 13:17:07 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 475)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 16648)
+Completed 200 OK in 960ms (Views: 20.6ms | ActiveRecord: 0.0ms | Allocations: 19540)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 13:20:34 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2690)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2779)
+Completed 500 Internal Server Error in 1228ms (ActiveRecord: 0.0ms | Allocations: 5667)
+
+
+  
+ActionView::Template::Error (undefined method `today' for Time:Class
+
+  <p>Time: '.freeze; @output_buffer.append=( Time.today.strftime("%H, %M") ); @output_buffer.safe_append='</p>
+                                                 ^^^^^^):
+     8: 
+     9:   <h1>Current Weather</h1>
+    10:   <p>Date: <%= Date.today.strftime("%A, %B %d") %></p>
+    11:   <p>Time: <%= Time.today.strftime("%H, %M") %></p>
+    12:   <p>Sunrise: <%= @weather_data.sunrise %></p>
+    13:   <p>Sunset: <%= @weather_data.sunset %></p>
+    14:   <p>Temperature: <%= @weather_data.temperature %>°C</p>
+  
+app/views/weather/show.html.erb:11
+Started GET "/weather/91356" for ::1 at 2024-01-29 13:21:40 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 491)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 16685)
+Completed 200 OK in 595ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 19591)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 13:22:47 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 490)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 16581)
+Completed 200 OK in 844ms (Views: 23.6ms | ActiveRecord: 0.0ms | Allocations: 19454)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 13:24:07 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 493)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 16584)
+Completed 200 OK in 1057ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 19452)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 13:24:10 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1395)
+Completed 200 OK in 618ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 3251)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 13:24:14 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1403)
+Completed 200 OK in 1071ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 3129)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 13:24:50 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 496)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 16687)
+Completed 200 OK in 772ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 19585)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 13:24:54 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 50)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1393)
+Completed 200 OK in 693ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 3266)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 14:09:17 -0800
+  
+ArgumentError (:to must respond to `action` or `call`, or it must be a String that includes '#'):
+  
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2024-01-29 14:09:23 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/" for ::1 at 2024-01-29 14:27:49 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 4658)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 4747)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 5833)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `weather_path' for #<ActionView::Base:0x00000000044728>
+
+'.freeze; @output_buffer.append=  form_with(url: weather_path, method: :get, local: true) do |form| ; @output_buffer.safe_append='
+                                                 ^^^^^^^^^^^^
+Did you mean?  weather_forecast_path):
+    2: <h1>Welcome to WeatherWise</h1>
+    3: <p>Please enter your zipcode:</p>
+    4: 
+    5: <%= form_with(url: weather_path, method: :get, local: true) do |form| %>
+    6:   <%= form.text_field :zip_code, placeholder: "Enter Zip Code" %>
+    7:   <%= form.submit "Get Current Weather" %>
+    8: <% end %>
+  
+app/views/home/index.html.erb:5
+Started GET "/" for ::1 at 2024-01-29 14:28:11 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1413)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1502)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2538)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"weather"}, missing required keys: [:zip_code]
+Did you mean?  weather_url):
+    2: <h1>Welcome to WeatherWise</h1>
+    3: <p>Please enter your zipcode:</p>
+    4: 
+    5: <%= form_with(url: weather_path, method: :get, local: true) do |form| %>
+    6:   <%= form.text_field :zip_code, placeholder: "Enter Zip Code" %>
+    7:   <%= form.submit "Get Current Weather" %>
+    8: <% end %>
+  
+app/views/home/index.html.erb:5
+Started GET "/" for ::1 at 2024-01-29 14:29:44 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 4616)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 4705)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 5742)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `weather_path' for #<ActionView::Base:0x0000000004b5a0>
+
+'.freeze; @output_buffer.append=  form_with(url: weather_path, method: :get, local: true) do |form| ; @output_buffer.safe_append='
+                                                 ^^^^^^^^^^^^
+Did you mean?  weather_forecast_path):
+    2: <h1>Welcome to WeatherWise</h1>
+    3: <p>Please enter your zipcode:</p>
+    4: 
+    5: <%= form_with(url: weather_path, method: :get, local: true) do |form| %>
+    6:   <%= form.text_field :zip_code, placeholder: "Enter Zip Code" %>
+    7:   <%= form.submit "Get Current Weather" %>
+    8: <% end %>
+  
+app/views/home/index.html.erb:5
+Started GET "/" for ::1 at 2024-01-29 14:30:05 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 4448)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 4531)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 4771)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `weather_path' for #<ActionView::Base:0x0000000004b8e8>
+
+'.freeze; @output_buffer.append=  form_with(url: weather_path, method: :get, local: true) do |form| ; @output_buffer.safe_append='
+                                                 ^^^^^^^^^^^^
+Did you mean?  weather_forecast_path):
+    2: <h1>Welcome to WeatherWise</h1>
+    3: <p>Please enter your zipcode:</p>
+    4: 
+    5: <%= form_with(url: weather_path, method: :get, local: true) do |form| %>
+    6:   <%= form.text_field :zip_code, placeholder: "Enter Zip Code" %>
+    7:   <%= form.submit "Get Current Weather" %>
+    8: <% end %>
+  
+app/views/home/index.html.erb:5
+Started GET "/" for ::1 at 2024-01-29 14:30:53 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 4613)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 4702)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 5736)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `weather_path' for #<ActionView::Base:0x0000000004f060>
+
+'.freeze; @output_buffer.append=  form_with(url: weather_path, method: :get, local: true) do |form| ; @output_buffer.safe_append='
+                                                 ^^^^^^^^^^^^
+Did you mean?  weather_forecast_path):
+    2: <h1>Welcome to WeatherWise</h1>
+    3: <p>Please enter your zipcode:</p>
+    4: 
+    5: <%= form_with(url: weather_path, method: :get, local: true) do |form| %>
+    6:   <%= form.text_field :zip_code, placeholder: "Enter Zip Code" %>
+    7:   <%= form.submit "Get Current Weather" %>
+    8: <% end %>
+  
+app/views/home/index.html.erb:5
+Started GET "/" for ::1 at 2024-01-29 14:32:06 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1339)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1428)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2462)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"weather"}, missing required keys: [:zip_code]
+Did you mean?  weather_url):
+    2: <h1>Welcome to WeatherWise</h1>
+    3: <p>Please enter your zipcode:</p>
+    4: 
+    5: <%= form_with(url: weather_path, method: :get, local: true) do |form| %>
+    6:   <%= form.text_field :zip_code, placeholder: "Enter Zip Code" %>
+    7:   <%= form.submit "Get Current Weather" %>
+    8: <% end %>
+  
+app/views/home/index.html.erb:5
+Started GET "/" for ::1 at 2024-01-29 14:33:28 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1341)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1430)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2464)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"weather"}, missing required keys: [:zip_code]
+Did you mean?  weather_url):
+    1: <!-- app/views/home/index.html.erb -->
+    2: <p>Please enter your zipcode:</p>
+    3: 
+    4: <%= form_with(url: weather_path, method: :get, local: true) do |form| %>
+    5:   <%= form.text_field :zip_code, placeholder: "Enter Zip Code" %>
+    6:   <%= form.submit "Get Current Weather" %>
+    7: <% end %>
+  
+app/views/home/index.html.erb:4
+Started GET "/" for ::1 at 2024-01-29 14:34:54 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1170)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1253)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1493)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"weather"}, missing required keys: [:zip_code]
+Did you mean?  weather_url):
+    1: <!-- app/views/home/index.html.erb -->
+    2: <p>Please enter your zipcode:</p>
+    3: 
+    4: <%= form_with(url: weather_path, method: :get, local: true) do |form| %>
+    5:   <%= form.text_field :zip_code, placeholder: "Enter Zip Code" %>
+    6:   <%= form.submit "Get Current Weather" %>
+    7: <% end %>
+  
+app/views/home/index.html.erb:4
+Started GET "/" for ::1 at 2024-01-29 14:35:08 -0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1170)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1253)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1477)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"weather"}, missing required keys: [:zip_code]
+Did you mean?  weather_url):
+    1: <!-- app/views/home/index.html.erb -->
+    2: <p>Please enter your zipcode:</p>
+    3: 
+    4: <%= form_with(url: weather_path, method: :get, local: true) do |form| %>
+    5:   <%= form.text_field :zip_code, placeholder: "Enter Zip Code" %>
+    6:   <%= form.submit "Get Current Weather" %>
+    7: <% end %>
+  
+app/views/home/index.html.erb:4
+Started GET "/weather" for ::1 at 2024-01-29 14:38:29 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/weather"):
+  
+Started GET "/weather" for ::1 at 2024-01-29 14:39:24 -0800
+Processing by WeatherController#show as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 552)
+
+
+  
+ArgumentError (key cannot be blank):
+  
+app/controllers/weather_controller.rb:18:in `show'
+Started POST "/__web_console/repl_sessions/0f203955d14fdc560b5f82b31777f03d/trace" for ::1 at 2024-01-29 14:39:58 -0800
+Started GET "/weather/91356" for ::1 at 2024-01-29 14:40:23 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/weather/91356"):
+  
+Started GET "/weather/91356" for ::1 at 2024-01-29 14:40:58 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 658)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 16670)
+Completed 200 OK in 1043ms (Views: 33.7ms | ActiveRecord: 0.0ms | Allocations: 19570)
+
+
+Started GET "/weather_forecast/91356" for ::1 at 2024-01-29 14:41:02 -0800
+Processing by WeatherController#index as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/index.html.erb within layouts/application
+  Rendered weather/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1482)
+Completed 200 OK in 1144ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 3430)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 15:27:15 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 110)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1466)
+Completed 200 OK in 927ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 3215)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 15:27:20 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1464)
+Completed 200 OK in 1053ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 3186)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 15:27:24 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1458)
+Completed 200 OK in 1060ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 3175)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 15:27:26 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 1464)
+Completed 200 OK in 1003ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 3184)
+
+
+Started GET "/weather/91356" for ::1 at 2024-01-29 15:27:29 -0800
+Processing by WeatherController#show as HTML
+  Parameters: {"zip_code"=>"91356"}
+  Rendering layout layouts/application.html.erb
+  Rendering weather/show.html.erb within layouts/application
+  Rendered weather/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1464)
+Completed 200 OK in 564ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 3183)
+
+

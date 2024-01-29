@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+.forecast-day {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Additional styling */
+  

@@ -1,5 +1,8 @@
-<% form_for @entry do |f| %>
-    <%= f.text_field :name %>
-    <%= f.select :temperature, [['Hot','hot'],['Medium','medium'],['Cold','cold']] %>
-    <%= f.submit %>
-  <% end %>
+<!-- app/views/home/index.html.erb -->
+<h1>Welcome to WeatherWise</h1>
+<p>Please enter your zipcode:</p>
+
+<%= form_with(url: weather_path, method: :get, local: true) do |form| %>
+  <%= form.text_field :zip_code, placeholder: "Enter Zip Code" %>
+  <%= form.submit "Get Current Weather" %>
+<% end %>
