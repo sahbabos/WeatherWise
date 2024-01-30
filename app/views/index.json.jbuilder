@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # app/views/weather/index.json.jbuilder
 
 if @error

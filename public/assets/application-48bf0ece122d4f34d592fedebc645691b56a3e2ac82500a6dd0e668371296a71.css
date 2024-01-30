@@ -1,0 +1,87 @@
+/* Styles for the forecast layout */
+.forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.forecast-day {
+  flex: 0 0 calc(25% - 10px); /* Adjust width for smaller squares */
+  box-sizing: border-box;
+  border: 1px solid #ddd; /* Optional: border for each day */
+  padding: 10px;
+  border-radius: 5px; /* Optional: rounded corners */
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.forecast-link {
+  display: inline-block;
+  padding: 8px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  background-color: #28a745;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease;
+}
+
+.forecast-link:hover {
+  background-color: #218838; 
+  color: white;
+}
+
+.current-weather-box {
+  border: 1px solid #ddd; /* Light grey border */
+  padding: 10px; /* Reduced padding */
+  margin: 5px 0; /* Reduced margin */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light grey background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  width: auto; /* Adjust width as needed, or use 'auto' for natural width */
+  max-width: 500px; /* Optional: Set a maximum width */
+  margin-left: auto; /* Centering the box */
+  margin-right: auto; /* Centering the box */
+}
+
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

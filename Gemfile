@@ -33,6 +33,7 @@ gem 'country_select', '~> 8.0'
 
 gem 'rubocop'
 gem 'rubocop-rails'
+gem 'rubocop-rspec'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
@@ -73,8 +74,7 @@ group :development do
   gem 'error_highlight', '>= 0.4.0', platforms: [:ruby]
 end
 
-group :test do
-  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'capybara'
-  gem 'selenium-webdriver'
+group :development, :test do
+  gem 'rails-controller-testing'
+  gem 'rspec-rails'
 end
