@@ -1,24 +1,44 @@
-# README
+# WeatherWise: Real-Time Weather Forecasts
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Introduction
 
-Things you may want to cover:
+WeatherWise is your go-to application for real-time weather forecasts. Simply enter an address, and get instant access to the current temperature, daily high/low, and extended forecasts. With an efficient 30-minute caching system, WeatherWise ensures you stay informed with minimal delay!
 
-* Ruby version
+## Getting Started
 
-* System dependencies
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-* Configuration
+### Prerequisites
 
-* Database creation
+Before you begin, ensure you have the following installed:
+- Ruby version 3.1.0
+- Rails (version specified in Gemfile)
 
-* Database initialization
+### Installation
 
-* How to run the test suite
+1. **Clone the repository**
+```git clone [repository URL]```
 
-* Services (job queues, cache servers, search engines, etc.)
+2. **Navigate to the directory**
+```cd path-to-folder```
 
-* Deployment instructions
+3. **Install dependencies**
+```bundle install```
 
-* ...
+4. **Start the Rails server**
+```rails s```
+
+
+5. **Access the Application**
+Open your browser and visit `localhost:3000`. Enter your desired zipcode to receive the latest weather forecasts.
+
+## Running the Tests
+
+To run all the test suite and ensure everything is functioning as expected:
+```bundle exec rspec```
+
+## Features
+
+- **Real-time weather data:** Access up-to-date weather information.
+- **Efficient caching:** 30-minute caching for faster, more efficient performance.
+- **User-friendly interface:** Easy to navigate and use.
