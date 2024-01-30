@@ -1,0 +1,26 @@
+<!-- app/views/weather/index.html.erb -->
+<h1>8-Day Weather Forecast for <%= params[:zip_code] %></h1>
+
+<% if @error %>
+  <p><%= @error %></p>
+<% else %>
+  <div class="forecast-container">
+    <% @eight_day_forecast.each do |day| %>
+      <div class="forecast-day">
+      <h2>Date: <%= day.date.strftime("%A, %B %d") %></h2>
+      <p>Summary: <%= day.summary %></p>
+      <p>Temperature: Day: <%= day.temp_day %>°C, Night: <%= day.temp_night %>°C</p>
+      <p>Humidity: <%= day.humidity %>%</p>
+      <p>Pressure: <%= day.pressure %> hPa</p>
+      <p>UV Index: <%= day.uvi %></p>
+      <% if day.weather %>
+        <p>Weather Conditions: <%= day.weather[:main] %> - <%= day.weather[:description] %></p>
+        <img src="http://openweathermap.org/img/wn/<%= day.weather[:icon] %>@2x.png" alt="Weather icon">
+      <% end %>
+    </div>
+    <% end %>
+  </div>
+<% end %>
+
+<%= link_to 'Back to Main Page', root_path, class: 'btn btn-primary' %>
+

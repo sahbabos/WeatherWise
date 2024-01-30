@@ -1,0 +1,30 @@
+<% if @weather_data %>
+  <% if @from_cache %>
+    <p>Data loaded from cache.</p>
+  <% else %>
+    <p>Data retrieved from OpenWeatherMap API.</p>
+  <% end %>
+
+  <div class="current-weather-box">
+    <h1>Current Weather</h1>
+    <p>Date: <%= Date.today.strftime("%A, %B %d") %></p>
+    <p>Time: <%= Time.now.strftime("%H:%M") %></p>
+    <p>Sunrise: <%= @weather_data.sunrise %></p>
+    <p>Sunset: <%= @weather_data.sunset %></p>
+    <p>Temperature: <%= @weather_data.temperature %>°C</p>
+    <p>Feels Like: <%= @weather_data.feels_like %>°C</p>
+    <p>Pressure: <%= @weather_data.pressure %></p>
+    <p>Humidity: <%= @weather_data.humidity %></p>
+    <p>UV Index: <%= @weather_data.uvi %></p>
+    <p>Cloudiness: <%= @weather_data.clouds %></p>
+    <p>Visibility: <%= @weather_data.visibility %></p>
+    <p>Weather Conditions: <%= @weather_data.main %>, <%= @weather_data.description %></p>
+    <% if @weather_data.icon.present? %>
+      <img src="http://openweathermap.org/img/wn/<%= @weather_data.icon %>@2x.png" alt="Weather icon">
+    <% end %>
+  </div>
+<% else %>
+  <p>Current weather data is not available.</p>
+<% end %>
+<%= link_to "View 8-Day Forecast", weather_forecast_path(zip_code: params[:zip_code]), class: "forecast-link" %>
+<%= link_to 'Back to Main Page', root_path, class: 'btn btn-primary' %>
