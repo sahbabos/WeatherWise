@@ -1,0 +1,19 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+
+# List of cops and their configurations
+Layout/LineLength:
+  Max: 120
+
+Metrics/BlockLength:
+  ExcludedMethods: ['describe', 'context', 'it']
+
+AllCops:
+  SuggestExtensions: false
+
+RSpec/Naming/NamedSubject:
+  Enabled: false
+  
+RSpec/ExampleLength:
+  Enabled: false
